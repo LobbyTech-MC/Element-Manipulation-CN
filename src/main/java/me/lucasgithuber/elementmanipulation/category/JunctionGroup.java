@@ -373,7 +373,12 @@ public class JunctionGroup extends FlexItemGroup {
     @AllArgsConstructor
     private static final class BackEntry {
 
-        private final BlockMenu bench;
+        public BackEntry(BlockMenu bench, PlayerProfile profile, SlimefunGuideImplementation impl) {
+			this.bench = bench;
+			this.profile = profile;
+			this.impl = impl;
+		}
+		private final BlockMenu bench;
         private final PlayerProfile profile;
         private final SlimefunGuideImplementation impl;
 

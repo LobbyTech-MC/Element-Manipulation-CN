@@ -16,4 +16,8 @@ public enum BigLore {
         this.color=color;
         this.lore=lore;
     }
+	String lore() {
+		// TODO Auto-generated method stub
+		return lore;
+	}
 }

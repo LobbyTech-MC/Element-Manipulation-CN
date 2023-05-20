@@ -372,12 +372,18 @@ public class DrugsGroup extends FlexItemGroup {
         menu.open(player);
     }
 
-    @AllArgsConstructor
     private static final class BackEntry {
 
-        private final BlockMenu bench;
+        
+		private final BlockMenu bench;
         private final PlayerProfile profile;
         private final SlimefunGuideImplementation impl;
+        
+        public BackEntry(BlockMenu bench, PlayerProfile profile, SlimefunGuideImplementation impl) {
+			this.bench = bench;
+			this.profile = profile;
+			this.impl = impl;
+		}
 
     }
 
